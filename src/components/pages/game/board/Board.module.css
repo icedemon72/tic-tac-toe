@@ -1,0 +1,80 @@
+.table_container {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.table_body > tr {
+  display: flex;
+  font-size: 100px;
+  text-align: center;
+}
+
+.table_body > tr > td {
+  flex: 1 0 auto;
+  width: 200px;
+  height: 200px;
+  line-height: 175px;
+  border: none;
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+td:hover {
+  background-color: rgb(199, 199, 199);
+  cursor: pointer;
+}
+
+.x {
+  color: rgb(192, 60, 60);
+}
+
+.o {
+  color: rgb(62, 62, 228);
+}
+
+.placeholder {
+  color:rgb(216, 216, 216);
+}
+
+.win {
+  color: rgb(24, 122, 24) !important;
+  background-color: rgb(199, 199, 199) !important;
+}
+
+/* fuccin borders */
+
+tr > td:nth-child(1), tr > td:nth-child(2) {
+  border-right: 10px solid black;
+}
+
+.tr_1, .tr_2 {
+  border-bottom: 10px solid black;
+}
+
+
+@media screen and (max-width: 768px) {
+  .table_body > tr {
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .table_body > tr > td {
+    width: 100px;
+    height: 100px;
+    line-height: 75px;
+  }
+
+  tr > td:nth-child(1), tr > td:nth-child(2) {
+    border-right: 5px solid black;
+  }
+  
+  .tr_1, .tr_2 {
+    border-bottom: 5px solid black;
+  }
+}
